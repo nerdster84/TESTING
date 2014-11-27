@@ -1,0 +1,11 @@
+======================================================================================
+Notizen zu FirstOne.java (erste Tests, wie Java und SQL gemeinsam zu verwenden sind)
+======================================================================================
+
+anschauen:
+	- Folien vom Eck
+	- ResultSet in der Java-Api
+		http://docs.oracle.com/javase/8/docs/api/java/sql/ResultSet.html
+	- sowieso ganze Doc-Seiten zu java.sql
+		http://docs.oracle.com/javase/8/docs/api/java/sql/package-frame.html
+		
