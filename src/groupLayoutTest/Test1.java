@@ -33,18 +33,25 @@ public class Test1 {
 		JPanel panelB3 = new JPanel();
 		JPanel panelB4 = new JPanel();
 		
-		GroupLayout.ParallelGroup groupV1= layout.createParallelGroup();
-		groupV1.addComponent(panelA1);
-		groupV1.addComponent(panelA2);
-		groupV1.addComponent(panelA3);
-		groupV1.addComponent(panelA4);
-		layout.addLayoutComponent(panelA1, groupV1);
-		layout.addLayoutComponent(panelA2, groupV1);
-		layout.addLayoutComponent(panelA3, groupV1);
-		layout.addLayoutComponent(panelA4, groupV1);
+		GroupLayout.ParallelGroup hGroup1= layout.createParallelGroup();
+		//GroupLayout.SequentialGroup vGroup1 = layout.createSequentialGroup();
+		//groupV1.addComponent(panelA1);
+		hGroup1.addGroup(layout.createParallelGroup().addComponent(panelBl).addComponent(panelB2));
+		GroupLayout.ParallelGroup vGroup1= layout.createParallelGroup();
+		hGroup1.addGroup(layout.createParallelGroup().addComponent(panelBl).addComponent(panelB2));
+		
+		
+//		groupV1.addComponent(panelA2);
+//		groupV1.addComponent(panelA3);
+//		groupV1.addComponent(panelA4);
+		layout.setHorizontalGroup(hGroup1);
+		layout.setVerticalGroup(group);
+//		layout.addLayoutComponent(panelA2, groupV1);
+//		layout.addLayoutComponent(panelA3, groupV1);
+//		layout.addLayoutComponent(panelA4, groupV1);
 		
 		mainWindow.setVisible(true);
-		
+		System.out.println("afd");
 		
 	}
 
